@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Video Downloader</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    
+    .input-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    
+    #video-url {
+      padding: 10px;
+      width: 400px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    #download-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: hsl(0, 95%, 50%);
+      color: #ffffff;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    #download-button:hover {
+      background-color: #665e5e;
+    }
+  </style>
+</head>
+<body>
+  <h1>YouTube Video Downloader</h1>
+  <div class="input-container">
+    <input type="text" id="video-url" placeholder="Enter the YouTube video URL">
+  </div>
+  <button id="download-button" onclick="downloadVideo()">Download Video</button>
+  <script src="script.js"></script>
+</body>
+</html>
